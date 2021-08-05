@@ -11,7 +11,7 @@ class AuthController extends Controller
     }
 
     public function dologin(Request $request){
-        $request->validate([
+        $request->validate([ 
             'email' => 'required|string|email',
             'password' => 'required|string',
         ]);
